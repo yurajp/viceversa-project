@@ -1,0 +1,31 @@
+<style>
+    body {
+        padding: 5% 10%;
+    }
+    h1 { 
+        font-size:3rem; 
+    } 
+    
+    .answer {
+        display:block;
+        width:600px;
+        background: rgb(215, 245, 229);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.4rem;
+        padding:1rem;
+    }
+    #back {
+        text-decoration: none;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.1rem;
+    }
+</style>
+
+<h1> Reversed Text</h1>
+<br>
+<div class='answer'>
+    {{ reverse_text }}
+</div>
+<br><br>
+<p ><a id='back' href="{% url 'home' %}"><i>Еще раз?</i></a></p>

@@ -6,11 +6,14 @@
         font-size:3rem; 
     } 
     form input {
-        font-size: 1.4rem;
         padding: 1rem 4rem;
         margin-top:2rem;
+        font-size: 1.4rem;
+        background: rgb(215, 245, 229);
     }
     textarea {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.4rem;
         resize: none;
     }
 </style>
@@ -18,8 +21,8 @@
 <h1>Vice Versa</h1>
 <br>
 
-<form >
-    <textarea id='usertext' rows='10' cols='70'>
+<form action={% url 'reverse' %}>
+    <textarea id='usertext' rows='10' cols='70' name='usertext'>
 
     </textarea>
     <br>
